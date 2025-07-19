@@ -12,6 +12,7 @@ const Button: React.FC<ButtonProps> = ({
   title,
   size = 'medium',
   rounded = 'rounded-md',
+  
   className = '',
 }) => {
   const sizeClass = sizeClasses[size] || sizeClasses.medium;
