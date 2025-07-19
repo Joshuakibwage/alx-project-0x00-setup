@@ -124,6 +124,6 @@ Responsive design using Tailwind CSS
 
 📝 Author
 
-    Your Name – @joshuakibwage
+    @joshuakibwage
 
     ALX ProDevFe Software Engineering Program
