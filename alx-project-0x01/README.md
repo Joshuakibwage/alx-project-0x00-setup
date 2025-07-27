@@ -1,40 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🏗️ ALX Project: Next.js Architecture - `alx-project-0x01`
 
-## Getting Started
+A feature-rich Next.js web application demonstrating advanced architecture patterns, reusable components, state management, and responsive design. Built as part of the **ALX ProDevFE** program to deepen understanding of scalable front-end development using **TypeScript**, **Tailwind CSS**, and **Next.js**.
 
-First, run the development server:
+---
+
+## 🚀 Project Overview
+
+This project simulates a **content management interface** with pages to view, add, and manage both **posts** and **users**, powered by the [JSONPlaceholder](https://jsonplaceholder.typicode.com/) mock API. It leverages modern UI/UX practices and strong architectural decisions for scalability and reusability.
+
+---
+
+## 🎯 Features
+
+- ✅ Next.js App setup with ESLint, Tailwind CSS, and TypeScript
+- ✅ Dynamic routing between Home, Posts, and Users
+- ✅ Modular component architecture with separation of concerns
+- ✅ Interactive modals for adding posts and users
+- ✅ Static site generation with `getStaticProps`
+- ✅ Type-safe props and event handling
+- ✅ Responsive layout and mobile-friendly design
+
+---
+
+## 📁 Project Structure
+
+alx-project-0x01/
+├── components/
+│ ├── common/ # Reusable UI components (PostCard, UserCard, Modals, etc.)
+│ └── layout/ # App layout components (Header, Footer)
+├── interfaces/ # TypeScript interfaces
+├── pages/
+│ ├── posts/ # Posts listing and modal integration
+│ ├── users/ # Users listing and modal integration
+│ └── index.tsx # Welcome page
+├── public/ # Static assets
+├── styles/ # Global Tailwind styles
+└── ...
+
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **API**: JSONPlaceholder (REST API)
+- **Tooling**: ESLint, Prettier, npm
+
+---
+
+## 🧠 Learning Objectives
+
+By completing this project, I gained hands-on experience in:
+
+- Setting up a production-ready Next.js app with TypeScript & Tailwind
+- Creating and organizing reusable components with strong type safety
+- Managing UI state with React hooks
+- Structuring a scalable frontend codebase by domain
+- Working with external APIs and SSG (`getStaticProps`)
+- Creating accessible, responsive, and modern user interfaces
+
+---
+
+
+## 🔍 Key Components
+
+| Component         | Purpose                                 |
+|------------------|------------------------------------------|
+| `PostCard.tsx`    | Displays individual post data            |
+| `UserCard.tsx`    | Displays user information                |
+| `PostModal.tsx`   | Modal to add a new post                  |
+| `UserModal.tsx`   | Modal to add a new user                  |
+| `Header.tsx`      | Navigational header across all pages     |
+| `Footer.tsx`      | Reusable footer (if used)                |
+| `index.tsx`       | Home splash screen                       |
+
+---
+
+## ✅ Completed Tasks Summary
+
+| Task # | Description                                | Score   |
+|--------|--------------------------------------------|---------|
+| 0      | Project Setup (Next.js, Tailwind, ESLint)  | 100% ✅ |
+| 1      | Navigation between pages                   | 100% ✅ |
+| 2      | Post Card Component                        | 66.67% ✅ |
+| 3      | User Card Component                        | 60% ✅ |
+| 4      | Add Post Modal Functionality               | 100% ✅ |
+| 5      | Add User Modal Functionality               | 66.67% ✅ |
+
+---
+
+## 🧩 How to Run Locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Clone the repository
+git clone https://github.com/Joshuakibwage/alx-project-0x01-setup.git
+cd alx-project-0x01
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Install dependencies
+npm install
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+# Start the dev server
+npm run dev -- -p 3000
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+# Open in browser
+http://localhost:3000
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+🙋‍♂️ Author
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Joshua Kibwage
+Frontend Developer @ ALX Africa
 
-## Learn More
+📜 License
 
-To learn more about Next.js, take a look at the following resources:
+This project is licensed under the MIT License.
+Feel free to fork, remix, and contribute.
+🌱 Reflection & Takeaways
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+    This project challenged me to think beyond just building UI. I learned the importance of structure, scalability, and type safety. Creating modals from scratch and integrating real API data gave me confidence to work with more advanced frontend patterns.
